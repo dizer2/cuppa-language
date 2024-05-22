@@ -46,6 +46,11 @@
   font-weight: 500;
 }
 
+/* hover */
+.navigation__link:hover {
+  color: var(--green);
+}
+
 /* cross button */
 .header .cross-btn {
   position: absolute;

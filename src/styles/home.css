@@ -44,6 +44,12 @@
   margin-top: 35px;
 }
 
+/* hover */
+.home__content-link:hover {
+  background-color: var(--yellow);
+  color: var(--green);
+}
+
 
 /* media */
 @media screen and (min-width: 768px) {

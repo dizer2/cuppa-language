@@ -6,6 +6,9 @@ import Header from './sections/header';
 // Home section
 import Home from './sections/home';
 
+// Ad section
+import Ad from './sections/ad';
+
 // styles
 import "./styles/application.css";
 
@@ -18,6 +21,7 @@ const Application: React.FunctionComponent<IApplicationProps> = () => {
     <div className="App">
       <Header />
       <Home />
+      <Ad />
     </div>
   );
 }
