@@ -1,0 +1,135 @@
+.reasons {
+  width: 100%; min-height: 100vh;
+}
+
+/* title */
+.reasons__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* list */
+.reasons__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  list-style-type: none;
+  margin-top: 30px;
+  gap: 50px;
+}
+
+.reasons__list-item {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  padding: 20px 25px;
+  cursor: pointer;
+}
+
+/* hover */
+.reasons__list-item:hover {
+  background-color: var(--green);
+}
+
+.reasons__list-item:hover .reasons__item-title {
+  color: var(--white);  
+}
+
+.reasons__list-item:hover .reasons__item-divider {
+  background-color: var(--white);
+  opacity: .35;
+}
+
+.reasons__list-item:hover .reasons__item-description {
+  color: var(--white);
+}
+
+.reasons__list-item:hover .reasons__item-header__count {
+  color: var(--white);
+}
+
+.reasons__item-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* lamp */
+.reasons__item-header__lamp-wrap {
+  width: 60px; height: 60px;
+  border-radius: 100%;
+  background-color: rgb(150, 185, 187);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* count */
+.reasons__item-header__count {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--green);
+  opacity: .15;
+}
+
+/* reason's title */
+.reasons__item-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+}
+
+/* divider */
+.reasons__item-divider {
+  width: 100%; height: 2px;
+  background-color: var(--yellow);
+  margin-top: 10px;
+}
+
+/* reason's description */
+.reasons__item-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+/* media */
+@media screen and (min-width: 540px) {
+  .reasons__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* title */
+  .reasons__title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .reasons {
+    min-height: 80vh;
+  }
+
+  .reasons__list {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: unset;
+  }
+
+  /* item */
+  .reasons__list-item {
+    width: 400px;
+  }
+
+  /* title */
+  .reasons__title {
+    text-align: left;
+  }
+}

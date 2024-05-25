@@ -48,7 +48,7 @@
 
 /* hover */
 .navigation__link:hover {
-  color: var(--green);
+  color: var(--yellow);
 }
 
 /* cross button */
@@ -119,6 +119,11 @@
 
   .navigation__link {
     color: var(--black);
+  }
+
+  /* hover */
+  .navigation__link:hover {
+    color: var(--green);
   }
 
   .header .burger-btn,
