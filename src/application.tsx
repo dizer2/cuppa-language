@@ -15,6 +15,9 @@ import Reasons from './sections/reasons';
 // Courses section
 import Courses from './sections/courses';
 
+// Plan section
+import Plan from './sections/plan';
+
 // styles
 import "./styles/application.css";
 
@@ -87,6 +90,7 @@ const Application: React.FunctionComponent<IApplicationProps> = () => {
           ]
         }
        />
+       <Plan />
     </div>
   );
 }

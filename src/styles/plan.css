@@ -1,0 +1,105 @@
+.plan {
+  width: 100%; min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+/* title */
+.plan__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* steps */
+.plan__steps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.plan__step {
+  padding: 20px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.step__icon {
+  width: 75px; height: 75px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-green .step__icon {
+  background-color: var(--green);
+}
+
+.step-yellow .step__icon {
+  background-color: var(--yellow);
+}
+
+.step__title {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.arrowSVG {
+  transform: rotate(90deg);
+}
+
+/* media */
+@media screen and (min-width: 768px) {
+  .plan {
+    min-height: 493px;
+    padding: 0;
+  }
+
+  .plan__steps {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .plan__step {
+    padding: 20px 40px;
+  }
+
+  .step__title {
+    font-size: 20px;
+  }
+
+  .arrowSVG {
+    transform: rotate(0);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .plan__title {
+    font-size: 48px;
+  }
+
+  .plan__steps {
+    gap: 30px;
+  }
+
+  .plan__step {
+    padding: 20px 80px;
+  }
+
+  .step__title {
+    font-size: 32px;
+  }
+}
