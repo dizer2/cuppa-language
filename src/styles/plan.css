@@ -69,7 +69,6 @@
   }
 
   .plan__steps {
-    flex-direction: row;
     gap: 10px;
   }
 
@@ -79,6 +78,25 @@
 
   .step__title {
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .plan__title {
+    font-size: 40px;
+  }
+
+  .plan__steps {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .plan__step {
+    padding: 20px 60px;
+  }
+
+  .step__title {
+    font-size: 28px;
   }
 
   .arrowSVG {

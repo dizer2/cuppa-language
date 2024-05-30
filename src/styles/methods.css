@@ -1,0 +1,141 @@
+.methods {
+  width: 100%; min-height: 1099px;
+  position: relative;
+  background-color: var(--green);
+  padding-top: 60px;
+}
+
+.methods .container {
+  position: static;
+}
+
+.methods__curve {
+  position: absolute;
+  z-index: 0;
+}
+
+.methods__curve:nth-child(1) {
+  width: 300.54px; height: 200.59px;
+  top: 0; right: 0;
+}
+
+.methods__curve:nth-child(2) {
+  width: 720.1px; height: 561.6px;
+  bottom: 0; left: 0;
+}
+
+/* title */
+.methods__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;  
+  color: var(--white);
+}
+
+/* list */
+.methods__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 30px;
+  list-style-type: none;
+}
+
+.methods__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px 20px 0;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+.method__number {
+  padding: 27px 30px 27px 25px;
+  background-color: var(--yellow);
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+
+.method-id {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.method__content {
+  margin-left: 10px;
+}
+
+.method-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.method-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.method__icon {
+  width: 100px; height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.method__icon svg {
+  width: 100%; height: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .methods__curve:nth-child(1) {
+    width: 782.54px; height: 593.59px;
+    top: 0; right: 0;
+  }
+  
+  .methods__curve:nth-child(2) {
+    width: 720.1px; height: 561.6px;
+    bottom: 0; left: 0;
+  }
+
+  .methods__list {
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .methods__item {
+    width: 714px;
+  }
+
+  .method-id {
+    font-size: 64px;
+  }
+
+  .method-title {
+    font-size: 32px;
+  }
+
+  .method-description {
+    font-size: 16px;
+  }
+
+  .methods__item:nth-child(2) {
+    margin-left: 200px;
+  }
+
+  .methods__item:nth-child(3) {
+    margin-left: 400px;
+  }
+
+  .methods__item:nth-child(4) {
+    margin-left: 600px;
+  }
+}

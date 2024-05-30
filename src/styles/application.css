@@ -10,10 +10,18 @@
   font-family: sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1312px;
   margin: 0 auto;
   position: relative;
+}
+
+.header__container {
+  position: static;
 }
 
 /* media for container */

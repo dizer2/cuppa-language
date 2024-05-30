@@ -1,5 +1,8 @@
 import React from 'react';
 
+// styles
+import "./styles/application.css";
+
 // header
 import Header from './sections/header';
 
@@ -18,8 +21,8 @@ import Courses from './sections/courses';
 // Plan section
 import Plan from './sections/plan';
 
-// styles
-import "./styles/application.css";
+// Methods section
+import Methods from './sections/methods';
 
 // props interface
 interface IApplicationProps { }
@@ -91,6 +94,36 @@ const Application: React.FunctionComponent<IApplicationProps> = () => {
         }
        />
        <Plan />
+       <Methods
+          methods={
+            [
+              {
+                id: 1,
+                title: "ROZLOŽENÍ UČENÍ",
+                description: "Aby si mozek více zapamatoval, je třeba opakovat látku v malých dávkách, ale často.",
+                icon: "clock"
+              },
+              {
+                id: 2,
+                title: "PŘÍMÉ UČENÍ",
+                description: "Cílevědomě a v kontextu opakujeme a probíráme jazyk. Minimalizujeme překlady a zbytečné poučky.",
+                icon: "atom"
+              },
+              {
+                id: 3,
+                title: "AKTIVNÍ VYBAVOVÁNÍ",
+                description: "Cílevědomě a v kontextu opakujeme a probíráme jazyk. Minimalizujeme překlady a zbytečné poučky.",
+                icon: "bolt"
+              },
+              {
+                id: 4,
+                title: "JAZYK I OBSAH",
+                description: "Naše lekce nejsou jen pokec na náhodné téma. Každá z nich má svůj jazykový i obsahový cíl.",
+                icon: "pallete"
+              },
+            ]
+          }
+       />
     </div>
   );
 }
