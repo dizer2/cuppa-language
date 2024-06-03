@@ -23,6 +23,7 @@ import Plan from './sections/plan';
 
 // Methods section
 import Methods from './sections/methods';
+import Feedbacks from './sections/feedbacks';
 
 // props interface
 interface IApplicationProps { }
@@ -121,6 +122,30 @@ const Application: React.FunctionComponent<IApplicationProps> = () => {
                 description: "Naše lekce nejsou jen pokec na náhodné téma. Každá z nich má svůj jazykový i obsahový cíl.",
                 icon: "pallete"
               },
+            ]
+          }
+       />
+       <Feedbacks
+          feedbacks={
+            [
+              {
+                id: 1,
+                author: "Radka Krosnářová",
+                feedback: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac semper lorem, a bibendum erat. Ut non felis lorem. Nunc ut tellus enim. Nunc maximus mauris vel leo hendrerit dignissim. Fusce commodo convallis dui,",
+                icon: "radka.png"
+              },
+              {
+                id: 2,
+                author: "Radka Krosnářová",
+                feedback: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac semper lorem, a bibendum erat. Ut non felis lorem. Nunc ut tellus enim. Nunc maximus mauris vel leo hendrerit dignissim. Fusce commodo convallis dui,",
+                icon: "radka.png"
+              },
+              {
+                id: 3,
+                author: "Radka Krosnářová",
+                feedback: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac semper lorem, a bibendum erat. Ut non felis lorem. Nunc ut tellus enim. Nunc maximus mauris vel leo hendrerit dignissim. Fusce commodo convallis dui,",
+                icon: "radka.png"
+              }
             ]
           }
        />
