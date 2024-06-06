@@ -20,8 +20,6 @@ interface IFeedbacksProps {
 const images = require.context('../img/authors', true);
 const imageList = images.keys().map((image: any) => images(image));
 
-console.log(imageList)
-
 // Feedbacks
 const Feedbacks: React.FunctionComponent<IFeedbacksProps> = ({ feedbacks }) => {
   return (

@@ -104,17 +104,15 @@
 .courses__curve {
   position: absolute;
   z-index: 0;
+  width: 390px; height: 340px;
 }
 
 .courses__curve:nth-child(1) {
-  width: 782.54px; height: 593.59px;
-  top: 0; left: 0;
-  transform: rotate(180deg);
+  top: 0; right: 0;
 }
 
 .courses__curve:nth-child(2) {
-  width: 720.1px; height: 561.6px;
-  bottom: 0; right: 0;
+  bottom: 0; left: 0;
 }
 
 /* media */
@@ -130,16 +128,5 @@
 
   .courses__list {
     flex-direction: row;
-  }
-
-  .courses__curve:nth-child(1) {
-    width: 782.54px;  height: 593.59px;
-    top: 150px; left: 0;
-    transform: rotate(0);
-  }
-
-  .courses__curve:nth-child(2) {
-    width: 720.1px; height: 561.6px;
-    top: -300px; right: 0;
   }
 }

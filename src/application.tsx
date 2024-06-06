@@ -23,7 +23,12 @@ import Plan from './sections/plan';
 
 // Methods section
 import Methods from './sections/methods';
+
+// Feedbacks section
 import Feedbacks from './sections/feedbacks';
+
+// Team section
+import Team from './sections/team';
 
 // props interface
 interface IApplicationProps { }
@@ -148,6 +153,27 @@ const Application: React.FunctionComponent<IApplicationProps> = () => {
               }
             ]
           }
+       />
+       <Team
+        members={
+          [
+            {
+              name: "Štěpánka",
+              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac semper lorem, a bibendum erat. Ut non felis lorem. Nunc ut tellus enim. Nunc maximus mauris vel leo hendrerit dignissim. Fusce commodo convallis dui,",
+              image: "stepanka.png"
+            },
+            {
+              name: "Štěpánka",
+              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac semper lorem, a bibendum erat. Ut non felis lorem. Nunc ut tellus enim. Nunc maximus mauris vel leo hendrerit dignissim. Fusce commodo convallis dui,",
+              image: "tanya.png"
+            },
+            {
+              name: "Štěpánka",
+              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac semper lorem, a bibendum erat. Ut non felis lorem. Nunc ut tellus enim. Nunc maximus mauris vel leo hendrerit dignissim. Fusce commodo convallis dui,",
+              image: "john.png"
+            },
+          ]
+        }
        />
     </div>
   );
