@@ -152,4 +152,8 @@
   .footer__down {
     justify-content: space-between;
   }
+
+  .footer__list {
+    margin-top: 0;
+  }
 }
