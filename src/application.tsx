@@ -33,6 +33,9 @@ import Team from './sections/team';
 // Contact section
 import Contact from './sections/contact';
 
+// Footer section
+import Footer from './sections/footer';
+
 // props interface
 interface IApplicationProps { }
 
@@ -179,6 +182,7 @@ const Application: React.FunctionComponent<IApplicationProps> = () => {
         }
        />
        <Contact />
+       <Footer />
     </div>
   );
 }
