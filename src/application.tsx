@@ -30,6 +30,9 @@ import Feedbacks from './sections/feedbacks';
 // Team section
 import Team from './sections/team';
 
+// Contact section
+import Contact from './sections/contact';
+
 // props interface
 interface IApplicationProps { }
 
@@ -175,6 +178,7 @@ const Application: React.FunctionComponent<IApplicationProps> = () => {
           ]
         }
        />
+       <Contact />
     </div>
   );
 }

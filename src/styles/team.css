@@ -103,6 +103,7 @@
 
   .team__title {
     font-size: 48px;
+    text-align: left!important;
   }
 
   .team__members {

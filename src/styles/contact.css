@@ -1,0 +1,153 @@
+.contact {
+  width: 100%; min-height: 100vh;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact__content-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact__content-title span {
+  color: var(--yellow);
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact__content-form {
+  max-width: 600px; width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 38px auto;
+}
+
+.contact__form-input {
+  width: 100%;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 20px 15px;
+}
+
+/* focus */
+.contact__form-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.contact__form-button {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* hover */
+.contact__form-button:hover {
+  background-color: var(--yellow);
+  color: var(--green);
+}
+
+.contact__image {
+  width: 100%;
+  position: relative;
+  margin-top: 100px;
+}
+
+.contact__image-cup-img {
+  width: 100%; 
+  position: absolute;
+  top: 0; left: 10%;
+  z-index: 0;
+}
+
+.contact__image-people {
+  width: 100%;
+  position: relative;
+  top: 38px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact__image-people__col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__image-people-img {
+  width: 240px; height: 380px;
+}
+
+.contact__image-people__col .contact__image-people-img {
+  width: 350px; height: 180px;
+}
+
+@media screen and (max-width: 619px) {
+  .contact__image-people {
+    flex-direction: column;
+  }
+
+  .contact__image-people-img:not(.contact__image-people__col .contact__image-people-img) {
+    display: none;
+  }
+
+  .contact__image-people {
+    top: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact .container {
+    width: 100%;
+    flex-direction: row!important;
+    justify-content: space-between!important;
+  }
+
+  .contact__content-title,
+  .contact__content-title span {
+    font-size: 48px!important;
+    text-align: left;
+  }
+
+  .contact__image {
+    width: unset;
+  }
+
+  .contact__image-cup-img {
+    max-width: 522px;
+  }
+}
