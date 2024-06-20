@@ -1,0 +1,132 @@
+.courses {
+  width: 100%;
+  min-height: 70vh;
+  background-color: var(--green);
+  padding: 60px 0;
+  position: relative;
+}
+
+/* title */
+.courses__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--white);
+}
+
+/* list */
+.courses__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 56px;
+  margin-top: 30px;
+  z-index: 1;
+}
+
+/* item */
+.courses__list-item {
+  max-width: 400px;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.course__top {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+}
+
+.course__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* make it less brighter */
+  filter: brightness(0.7);
+}
+
+.course__title {
+  z-index: 1;
+  margin: 10px 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.course__bottom {
+  width: 100%;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.course__description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.course__link {
+  width: 100%;
+  background-color: var(--green);
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all .2s ease-in;
+}
+
+/* hover */
+.course__link:hover {
+  background-color: var(--yellow);
+  color: var(--green);
+}
+
+/* curves */
+.courses__curve {
+  position: absolute;
+  z-index: 0;
+  width: 390px; height: 340px;
+}
+
+.courses__curve:nth-child(1) {
+  top: 0; right: 0;
+}
+
+.courses__curve:nth-child(2) {
+  bottom: 0; left: 0;
+}
+
+/* media */
+@media screen and (min-width: 992px) {
+  .courses {
+    min-height: 639px;
+  }
+
+  .courses__title {
+    font-size: 48px;
+    text-align: left;
+  }
+
+  .courses__list {
+    flex-direction: row;
+  }
+}

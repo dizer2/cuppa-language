@@ -10,19 +10,34 @@
   font-family: sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 1312px;
   margin: 0 auto;
+  position: relative;
+}
+
+.header__container {
+  position: static;
 }
 
 /* media for container */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .container {
-    max-width: 960px;
+    max-width: 1200px;
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
   .container {
     max-width: 768px;
   }
@@ -30,11 +45,11 @@
 
 @media (max-width: 768px) {
   .container {
-    max-width: 540px;
+    max-width: 576px;
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   .container {
     max-width: 90%;
   }

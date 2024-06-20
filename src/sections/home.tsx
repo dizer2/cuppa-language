@@ -18,7 +18,7 @@ const Home: React.FunctionComponent<IHomeProps> = () => {
           manažerské kariéry!
         </h1>
 
-        <a className="home__content-link" href="#">
+        <a className="home__content-link" href="https://cuppa-language.vercel.app/">
           Zjistit víc
         </a>
       </div>

@@ -17,7 +17,7 @@ interface INavigationProps {
 
 const Navigation: React.FunctionComponent<INavigationProps> = ({ displayNavigation, setDisplayNavigation }) => {
   return (
-    <nav className="navigation" style={{ top: displayNavigation ? "0" : "-100%" }}>
+    <nav className="navigation" style={{ top: displayNavigation ? "0" : "-100vh" }}>
       <ul className="navigation__list">
         {navigationElements.map((element) => (
           <li key={element.id} className="navigation__item">
