@@ -68,9 +68,9 @@ const Footer: React.FC = (() => {
           {/* navigation */}
           <ul className="footer__list navigation">
             <li className="footer__list-item"><h1 className="footer__list-title">Navigace</h1></li>
-            <li className="footer__list-item"><a href="#" className="footer__list-text">Proč my</a></li>
-            <li className="footer__list-item"><a href="#" className="footer__list-text">Služby</a></li>
-            <li className="footer__list-item"><a href="#" className="footer__list-text">Naše metody</a></li>
+            <li className="footer__list-item"><a href="https://cuppa-language.vercel.app/" className="footer__list-text">Proč my</a></li>
+            <li className="footer__list-item"><a href="https://cuppa-language.vercel.app/" className="footer__list-text">Služby</a></li>
+            <li className="footer__list-item"><a href="https://cuppa-language.vercel.app/" className="footer__list-text">Naše metody</a></li>
           </ul>
 
           {/* details */}
@@ -100,8 +100,8 @@ const Footer: React.FC = (() => {
               })}
             </ul>
             <div className="footer__contacts-social">
-              <a href="#"><img className="footer__contacts-link" src={Facebook} alt="fb" /></a>
-              <a href="#"><img className="footer__contacts-link" src={Instagram} alt="insta" /></a>
+              <a href="https://www.facebook.com/"><img className="footer__contacts-link" src={Facebook} alt="fb" /></a>
+              <a href="https://www.instagram.com/"><img className="footer__contacts-link" src={Instagram} alt="insta" /></a>
             </div>
           </div>
         </div>

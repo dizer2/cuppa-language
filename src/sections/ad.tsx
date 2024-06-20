@@ -22,7 +22,7 @@ const Ad: React.FunctionComponent<IAdProps> = () => {
             <p className="ad__content-paragraph">
               “Konec nudných hodinovek a dojíždění! Přinášíme inovativní přístup k učení angličtiny pro manažery. Zvedněte svou profesionální úroveň s námi a buďte sebevědomými lídry!”
             </p>
-            <a href="#" className="ad__content-link">
+            <a href="https://cuppa-language.vercel.app/" className="ad__content-link">
               Tyden zdarma
             </a>
           </div>

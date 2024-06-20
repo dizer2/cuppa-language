@@ -42,7 +42,7 @@ const Feedbacks: React.FunctionComponent<IFeedbacksProps> = ({ feedbacks }) => {
               <p className="feedbacks__feedback">
                 {feedback.feedback}
               </p>
-              <a href="#" className="feedbacks__link">
+              <a href="https://cuppa-language.vercel.app/" className="feedbacks__link">
                 Uvidět víc
               </a>
             </li>

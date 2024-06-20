@@ -42,8 +42,8 @@ const Courses: React.FunctionComponent<ICoursesProps> = ({ courses }) => {
   return (
     <section className="courses">
       {/* curves */}
-      <img src={Curve1} className="courses__curve" />
-      <img src={Curve2} className="courses__curve" />
+      <img src={Curve1} className="courses__curve" alt="curve" />
+      <img src={Curve2} className="courses__curve" alt="curve" />
 
       <div className="container">
         {/* title */}
@@ -61,7 +61,7 @@ const Courses: React.FunctionComponent<ICoursesProps> = ({ courses }) => {
                 <p className="course__description">
                   {course.description}
                 </p>
-                <a href="#" className="course__link">Uvidět víc</a>
+                <a href="https://cuppa-language.vercel.app/" className="course__link">Uvidět víc</a>
               </div>
             </li>
           ))}
